@@ -457,8 +457,8 @@ body {
     max-width: 900px;
     margin: auto;
     /* padding-top: 6rem; Sesuaikan dengan tinggi navbar */
-    padding: 7rem 4%;
-    scroll-margin-top: 6rem; /* Pastikan title section terlihat saat di klik */
+    padding: 1.4rem 4%;
+    scroll-margin-top: 4rem; /* Pastikan title section terlihat saat di klik */
 }
 .contact-title {
     font-size: 5rem;
