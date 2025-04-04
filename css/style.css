@@ -304,7 +304,7 @@ body {
     
 }
 
-.our-project{
+/* .our-project{
     margin: 0;
     padding: 0;
 }
@@ -317,12 +317,12 @@ body {
 .box{
     min-height: 150px;
     width: 100%;
-}
+} */
 
 
 
 /* Section Our Project */
-.our-client {
+.our-client, .our-project {
     text-align: center;
     /* padding: 5rem 7%; */
     padding-top: 6rem; /* Sesuaikan dengan tinggi navbar */
@@ -334,7 +334,7 @@ body {
 }
 
 /* Judul */
-.our-client h2 {
+.our-client, .our-project h2 {
     font-size: 4rem;
     margin-bottom: 4rem;
     color: black;
@@ -462,6 +462,15 @@ body {
         width: 100%;
     }
 } */
+
+/* Section Client */
+.our-project img{
+    border-radius: 50%;
+    height: 250px;
+    width: auto;
+    border-color: #B5080C;
+} 
+/* Section End Client */
 
 /* Section Contact */
 
