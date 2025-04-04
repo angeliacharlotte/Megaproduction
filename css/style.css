@@ -305,11 +305,12 @@ body {
 }
 
 .our-project{
-    padding: 6rem 0; /* Hanya padding atas & bawah */
+    padding-top: 4rem;
     margin: 0;
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 4rem;
     box-sizing: border-box;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .our-project h2{
@@ -325,7 +326,7 @@ body {
     margin: auto;
     column-gap: 50px;
     row-gap: 100px;
-    padding: 2rem 1.4rem;
+    padding: 3rem 2rem;
 }
 .eo-item{
     width: auto;
@@ -391,10 +392,12 @@ body {
     margin: 0;
     scroll-margin-top: 6rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .container-client{
-    padding: 1.6rem 0;
+    padding: 1.4rem 4%;
+    scroll-margin-top: 4rem;
     display: flex;
     justify-content: center;
 }
