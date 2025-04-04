@@ -207,7 +207,7 @@ body {
 }
 /* end about responsive */
 /* Judul About */
-.about h2 {
+.about h2{
     font-size: 3.5rem; /* Lebih besar */
     font-weight: bold;
     margin-bottom: 2rem;
@@ -304,175 +304,117 @@ body {
     
 }
 
-/* .our-project{
+.our-project{
+    padding: 6rem 0; /* Hanya padding atas & bawah */
     margin: 0;
-    padding: 0;
-}
-
-.project-conteiner{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.box{
-    min-height: 150px;
-    width: 100%;
-} */
-
-
-
-/* Section Our Project */
-.our-client, .our-project {
+    scroll-margin-top: 6rem;
+    box-sizing: border-box;
     text-align: center;
-    /* padding: 5rem 7%; */
-    padding-top: 6rem; /* Sesuaikan dengan tinggi navbar */
-    scroll-margin-top: 6rem; /* Pastikan title section terlihat saat di klik */
-    background-image: url('../img/bg_index2.png');
-    background-size: cover;
-    background-position: center;
+}
+
+.our-project h2{
+    font-size: 2.6rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+    column-gap: 50px;
+    row-gap: 100px;
+    padding: 2rem 1.4rem;
+}
+.eo-item{
+    width: auto;
+    padding: 20px auto;  
+    text-align: left;
+}
+
+.eo-img {
+    width: 650px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+
+.eo-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    display: block;
+}
+
+.eo-item img:hover{
+    transform: scale(1.2);
     
 }
 
-/* Judul */
-.our-client, .our-project h2 {
-    font-size: 4rem;
-    margin-bottom: 4rem;
-    color: black;
-}
-
-/* Wrapper agar box tidak menyatu */
-.client-box-wrapper {
-    /* display: flex;
-    flex-direction: column;  */
-    /* Susun ke bawah */
-    /* align-items: center;
-    gap: 80px;  */
-    /* Jarak antar box lebih besar */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.client-box-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-/* Setiap Box */
-.client-box {
-    width: 400px;
-    /* max-width:1000px; Lebar lebih besar */
-    height: auto; /* Tinggi lebih besar */
-    background: white;
-    border-radius: 2px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    color: black;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-    position: relative;
-    margin-bottom: 50px; /* Menambah jarak antar box */
-}
-
-
-/* Background merah masing-masing */
-.client-box::before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    right: -30px;
-    bottom: -30px;
-    background-color: #B5080C;
-    border-radius: 30px;
-    z-index: -1;
-}
-
-/* Slider dalam setiap box */
-.client-slider {
-    width: 80%;
-    height: 250px;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-}
-
-/* Gambar dalam slider */
-.client-slider img {
-    width: 100%;
-    height: 100%; /* Ukuran lebih besar */
-    object-fit: cover;
-    border-radius: 5px;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-/* Animasi slider otomatis */
-@keyframes fade {
-    0% { opacity: 1; }
-    33% { opacity: 0; }
-    66% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-/* Aktifkan animasi pada setiap gambar */
-.client-slider img:nth-child(1) { animation: fade 9s infinite 0s; }
-.client-slider img:nth-child(2) { animation: fade 9s infinite 3s; }
-.client-slider img:nth-child(3) { animation: fade 9s infinite 6s; }
-.client-slider img:nth-child(4) { animation: fade 9s infinite 9s; }
-.client-slider img:nth-child(5) { animation: fade 9s infinite 12s; }
-.client-slider img:nth-child(6) { animation: fade 9s infinite 15s; }
-.client-slider img:nth-child(7) { animation: fade 9s infinite 18s; }
-
-/* Jarak antara gambar dan teks dalam box */
-.client-box .description {
-    font-size: 1.8rem;
+.eo-item p{
+    padding-top: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
-    text-align: center;
-    margin-top: 50px; /* Jarak lebih besar */
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block; /* Supaya efeknya pas di bawah teks */
     color: black;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Responsive Layout */
-/* @media screen and (max-width: 450px) {
-    .client-box, .client-slider, .client-slider{
-        width: 50%;
-    }
-} */
+.eo-item p:hover{
+    color: #B5080C;
+}
 
-/* @media screen and (min-width: 550px) {
-    .client-box {
-        max-width: 100%;
-    }
+.eo-item p::after{
+    content: '';
+    display: block;
+    width: 100%; /* Supaya panjangnya mengikuti teks */
+    height: 2px; /* Ketebalan garis */
+    background-color: #B5080C; /* Warna garis */
+    position: absolute;
+    bottom: -5px; /* Jarak antara teks dan garis */
+    left: 0;
+    transform: scaleX(0); /* Mulai dari tidak terlihat */
+    transition: transform 0.3s ease-in-out;
+}
 
-    .client-slider img {
-        max-height: 150px;
-    }
-} */
+.eo-item p:hover::after{
+    transform: scaleX(0.7);
+    
+}
 
-/* @media screen and(min-width: 1000px) {
-    .our-client{
-        width: 100%;
-    }
-} */
+.our-client{
+    padding: 6rem 0; /* Hanya padding atas & bawah */
+    margin: 0;
+    scroll-margin-top: 6rem;
+    text-align: center;
+}
 
-/* Section Client */
-.our-project img{
+.container-client{
+    padding: 1.6rem 0;
+    display: flex;
+    justify-content: center;
+}
+.client-item img{
     border-radius: 50%;
-    height: 250px;
-    width: auto;
-    border-color: #B5080C;
-} 
-/* Section End Client */
+    width: 50%;
+    height: auto;
+}
 
-/* Section Contact */
+.our-client h2{
+    font-size: 2.6rem;
+}
+
+.our-client h2::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #B5080C;
+    transform: scaleX(0.1);
+}
 
 .contact {
     background-color: #ffffff;
