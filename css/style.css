@@ -284,11 +284,10 @@ body {
     /* flex-wrap: wrap; */
     justify-content: center;
     max-width: 900px;
-    margin: auto;
-    padding-left: 2.6rem 0;
+    margin: 0 auto;
     column-gap: 50px;
     row-gap: 100px;
-    padding: 3rem 2rem;
+    padding: 40px 20px;
 }
 .eo-item{
     width: 650px;
