@@ -532,15 +532,16 @@ body {
         .grid-container {
             grid-template-columns: 1fr;
             row-gap: 40px;
+            justify-content: center;
         }
 
         .eo-item{
             width: 100%;
-            max-width: 350px;
+            max-width: 450px;
         }
         .eo-img{
-            min-width: 300px;
-            width: 300px;
+            min-width: 400px;
+            width: 400px;
             height: auto;
             object-fit: cover;
         }
