@@ -44,17 +44,9 @@ body {
 }
 
 /* Navbar Navigasi Tengah */
-
 .navbar .navbar-nav{
     display: flex; /* Biar navigasi berjajar */
     margin-left: auto; /* Mendorong menu ke kanan */
-    /* gap: 1rem; Beri jarak antar menu */
-    /* position: absolute;
-    top: 100%;
-    right: -100%;
-    background-color: #B5080C;
-    width: 30rem;
-    height: 100vh; */
 }
 
 .navbar .navbar-nav a {
@@ -173,39 +165,7 @@ body {
     text-align: justify;
     font-family: Arial, sans-serif;
 }
-/* start about responsive */
-/* Responsif untuk tablet (lebar layar < 768px) */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column; /* Susun vertikal */
-        align-items: center;
-        text-align: center;
-    }
 
-    .about-image {
-        width: 70%; /* Gambar penuh */
-    }
-
-    .about-text {
-        width: 70%;
-    }
-}
-
-/* Responsif untuk HP kecil (lebar layar < 480px) */
-@media (max-width: 480px) {
-    .about-container {
-        padding: 20px;
-    }
-
-    .about-text h2 {
-        font-size: 20px;
-    }
-
-    .about-text p {
-        font-size: 14px;
-    }
-}
-/* end about responsive */
 /* Judul About */
 .about h2{
     font-size: 3.5rem; /* Lebih besar */
@@ -305,6 +265,7 @@ body {
 }
 
 .our-project{
+    padding: 60px 20px;
     padding-top: 4rem;
     margin: 0;
     scroll-margin-top: 4rem;
@@ -318,19 +279,20 @@ body {
 }
 
 .grid-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    /* flex-wrap: wrap; */
     justify-content: center;
     max-width: 900px;
     margin: auto;
+    padding-left: 2.6rem 0;
     column-gap: 50px;
     row-gap: 100px;
     padding: 3rem 2rem;
 }
 .eo-item{
-    width: auto;
-    padding: 20px auto;  
+    width: 650px;
+    height: auto;
     text-align: left;
 }
 
@@ -388,7 +350,7 @@ body {
 }
 
 .our-client{
-    padding: 6rem 0; /* Hanya padding atas & bawah */
+    /* padding: 3rem 0; Hanya padding atas & bawah */
     margin: 0;
     scroll-margin-top: 6rem;
     text-align: center;
@@ -538,6 +500,18 @@ body {
         padding: 0 1rem; /* Sedikit padding agar teks tidak terlalu mepet */
     }
 
+    .about-container {
+        flex-direction: column; /* Susun vertikal */
+        align-items: center;
+        text-align: center;
+    }
+    .about-image {
+        width: 70%; /* Gambar penuh */
+    }
+    .about-text {
+        width: 70%;
+    }
+
     .about h2 {
         font-size: 3rem;
     }
@@ -550,11 +524,25 @@ body {
         font-size: 1.2rem;
     }
 
-
-
         .service {
             flex-wrap: wrap; /* Baru turun jika layar kecil */
             justify-content: center;
+        }
+
+        .grid-container {
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
+
+        .eo-item{
+            width: 100%;
+            max-width: 350px;
+        }
+        .eo-img{
+            min-width: 300px;
+            width: 300px;
+            height: auto;
+            object-fit: cover;
         }
     
         .service .box {
@@ -587,4 +575,16 @@ body {
     html {
         font-size: 55% ;
     }
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-text h2 {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
 }
