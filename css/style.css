@@ -52,7 +52,7 @@ body {
 .navbar .navbar-nav a {
     color: #B5080C;
     display: inline-block;
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
     margin: 0 1rem;
     padding-left: 200dp;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -112,7 +112,7 @@ body {
 
 .hero .content {
     padding: 1.6rem 7%;
-    max-width: 60 rem;
+    max-width: 60rem;
 }
 
 .hero .content h1 {
@@ -532,7 +532,7 @@ body {
         .grid-container {
             grid-template-columns: 1fr;
             row-gap: 40px;
-            justify-content: center;
+            align-items: center;
         }
 
         .eo-item{
